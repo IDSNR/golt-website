@@ -2,272 +2,157 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Golt — Spin, Post, Win</title>
+    <meta name="theme-color" content="#090909" />
+    <meta name="description" content="Golt is building a social platform for short media, communities, and creator-led earning." />
+    <meta property="og:title" content="Golt — Create, connect, and grow together" />
+    <meta property="og:description" content="Share short media, build communities, and take part in a creator-led economy." />
+    <meta property="og:type" content="website" />
+    <title>Golt — Create, connect, and grow together</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div id="app">
-
-      <!-- NAV -->
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" aria-label="Main navigation">
         <div class="nav-inner">
-          <span class="nav-logo">GOLT</span>
-          <a href="#" class="nav-cta" id="nav-cta-btn">Get early access</a>
+          <a class="nav-logo" href="#hero" aria-label="Golt home">GOLT</a>
+          <a href="#early-access" class="nav-cta">Early access</a>
         </div>
       </nav>
 
-      <!-- HERO -->
-      <section class="hero" id="hero">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-glow hero-glow--yellow"></div>
-        <div class="hero-glow hero-glow--green"></div>
-        <div class="hero-content">
-          <div class="hero-badge reveal-up">
-            <span class="badge-dot"></span>
-            Early access open now
-          </div>
-          <h1 class="hero-headline reveal-up delay-1">
-            Post. Boost.<br />
-            <span class="gradient-text">Spin &amp; Win.</span>
-          </h1>
-          <p class="hero-sub reveal-up delay-2">
-            Golt is the reward-powered social platform built for creators who move fast.<br class="br-desktop" />
-            Drop content, build momentum, and watch real rewards roll in.
-          </p>
-          <div class="hero-actions reveal-up delay-3">
-            <a href="#" class="btn btn--primary" id="hero-cta-btn">
-              Join the early crew
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="#how-it-works" class="btn btn--ghost">See how it works</a>
-          </div>
-          <p class="hero-freebie reveal-up delay-4">
-            <span class="freebie-icon">🎯</span>
-            Early signups get <strong>3 free spins</strong> — no catch.
-          </p>
-        </div>
-        <div class="hero-wheel-preview reveal-up delay-3">
-          <div class="mini-wheel-wrapper">
-            <canvas id="mini-wheel" width="220" height="220"></canvas>
-            <div class="mini-wheel-pointer"></div>
-          </div>
-          <div class="floating-tags">
-            <div class="ftag ftag--1">$200 <span class="ftag-sub">jackpot</span></div>
-            <div class="ftag ftag--2">3 free spins</div>
-            <div class="ftag ftag--3">real rewards</div>
-          </div>
-        </div>
-        <div class="scroll-hint">
-          <span>scroll</span>
-          <div class="scroll-line"></div>
-        </div>
-      </section>
-
-      <!-- CONCEPT -->
-      <section class="concept" id="how-it-works">
-        <div class="container">
-          <div class="concept-label reveal-up">What is Golt?</div>
-          <h2 class="concept-headline reveal-up delay-1">
-            A social platform where<br />
-            <span class="gradient-text">your engagement pays off.</span>
-          </h2>
-          <div class="concept-grid">
-            <div class="concept-card reveal-left delay-1">
-              <div class="concept-number">01</div>
-              <h3>Post your content</h3>
-              <p>Drop your best stuff — clips, takes, visuals, whatever you create. Every post is a ticket into the reward loop.</p>
+      <main id="main-content">
+        <section class="hero" id="hero">
+          <div class="hero-bg-grid" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow--yellow" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow--green" aria-hidden="true"></div>
+          <div class="hero-content hero-content--wide">
+            <div class="hero-badge reveal-up">
+              <span class="badge-dot" aria-hidden="true"></span>
+              Golt is being built now
             </div>
-            <div class="concept-card reveal-left delay-2">
-              <div class="concept-number">02</div>
-              <h3>Build momentum</h3>
-              <p>Get discovered, get boosted, get loud. The more your community reacts, the more momentum you carry into the wheel.</p>
-            </div>
-            <div class="concept-card reveal-left delay-3">
-              <div class="concept-number">03</div>
-              <h3>Spin &amp; collect</h3>
-              <p>Earn spins through activity and rewards. Land on $200 or pocket smaller wins — every spin is live and real.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FEATURES -->
-      <section class="features" id="features">
-        <div class="container">
-          <div class="features-header">
-            <div class="concept-label reveal-up">Built different</div>
-            <h2 class="features-headline reveal-up delay-1">
-              Everything you need<br />
-              <span class="gradient-text">nothing you don't.</span>
-            </h2>
-          </div>
-          <div class="features-grid">
-            <div class="feature-card reveal-scale delay-1">
-              <div class="feature-icon" style="--accent: #f0cb1f">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              </div>
-              <h3 class="feature-title">Creator Rewards</h3>
-              <p class="feature-desc">Post, engage, and earn spins based on your content's real performance. Not follower count — actual energy.</p>
-              <div class="feature-glow" style="--accent: #f0cb1f"></div>
-            </div>
-            <div class="feature-card reveal-scale delay-2">
-              <div class="feature-icon" style="--accent: #4ccd62">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-              </div>
-              <h3 class="feature-title">Boostable Reach</h3>
-              <p class="feature-desc">Your audience can boost your posts directly. More boosts = more visibility = more spins. Community-powered growth.</p>
-              <div class="feature-glow" style="--accent: #4ccd62"></div>
-            </div>
-            <div class="feature-card reveal-scale delay-3">
-              <div class="feature-icon" style="--accent: #f0cb1f">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </div>
-              <h3 class="feature-title">Squad Incentives</h3>
-              <p class="feature-desc">Bring your crew and multiply your reward chances. Referrals, group streaks, and collective bonuses keep everyone in.</p>
-              <div class="feature-glow" style="--accent: #f0cb1f"></div>
-            </div>
-            <div class="feature-card reveal-scale delay-4">
-              <div class="feature-icon" style="--accent: #4ccd62">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-              </div>
-              <h3 class="feature-title">Real Wallet Wins</h3>
-              <p class="feature-desc">Rewards go straight to your wallet. No points, no gift cards — cash value you can actually use.</p>
-              <div class="feature-glow" style="--accent: #4ccd62"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHEEL SECTION -->
-      <section class="wheel-section" id="wheel-section">
-        <div class="wheel-section-bg"></div>
-        <div class="container wheel-container">
-          <div class="wheel-text">
-            <div class="concept-label reveal-up">The spin</div>
-            <h2 class="wheel-headline reveal-up delay-1">
-              Every spin is<br />
-              <span class="gradient-text">a real shot at $200.</span>
-            </h2>
-            <p class="wheel-desc reveal-up delay-2">
-              This isn't some fake prize loop. The wheel has four live segments — and one of them lands on two hundred dollars. Earn spins through posts, boosts, and activity. Hit the wheel. See what drops.
+            <h1 class="hero-headline reveal-up delay-1">
+              Create. Connect.<br />
+              <span class="gradient-text">Grow together.</span>
+            </h1>
+            <p class="hero-sub reveal-up delay-2">
+              Golt brings short videos, photos, stories, messages, and communities into one social space—with tools designed to help creators and their audiences share value fairly.
             </p>
-            <div class="wheel-prizes reveal-up delay-3">
-              <div class="prize-pill prize--jackpot">$200 jackpot</div>
-              <div class="prize-pill prize--mid">$1 reward</div>
-              <div class="prize-pill prize--low">$0.50 reward</div>
+            <div class="hero-actions reveal-up delay-3">
+              <a href="#early-access" class="btn btn--primary">
+                Follow the launch
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#how-it-works" class="btn btn--ghost">See the idea</a>
             </div>
-            <a href="#" class="btn btn--primary reveal-up delay-4" id="wheel-cta-btn">
-              Secure 3 free spins
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            <p class="hero-freebie reveal-up delay-4">
+              <span class="freebie-icon" aria-hidden="true">●</span>
+              Clear rules, real money, and sponsored content labels are part of the plan.
+            </p>
           </div>
-          <div class="wheel-visual">
-            <div class="wheel-ring wheel-ring--outer reveal-scale delay-1"></div>
-            <div class="wheel-ring wheel-ring--inner reveal-scale delay-2"></div>
-            <div class="wheel-wrapper reveal-scale delay-2">
-              <canvas id="main-wheel" width="380" height="380"></canvas>
-              <div class="wheel-pointer-wrap">
-                <div class="wheel-pointer"></div>
+        </section>
+
+        <section class="concept" id="how-it-works">
+          <div class="container">
+            <div class="concept-label reveal-up">What Golt is for</div>
+            <h2 class="concept-headline reveal-up delay-1">
+              One place to share,<br />
+              <span class="gradient-text">belong, and build.</span>
+            </h2>
+            <div class="concept-grid">
+              <article class="concept-card reveal-left delay-1">
+                <div class="concept-number">01</div>
+                <h3>Share short media</h3>
+                <p>Post videos, photos, and stories. Follow people you care about and discover work through one shared feed.</p>
+              </article>
+              <article class="concept-card reveal-left delay-2">
+                <div class="concept-number">02</div>
+                <h3>Build real communities</h3>
+                <p>Create open or approval-only groups, talk live, and keep up through direct messages and notifications.</p>
+              </article>
+              <article class="concept-card reveal-left delay-3">
+                <div class="concept-number">03</div>
+                <h3>Choose how you earn</h3>
+                <p>Planned earning tools include subscriptions, referrals, affiliate sales, remixes, and clearly governed rewards.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="features" id="features">
+          <div class="container">
+            <div class="features-header">
+              <div class="concept-label reveal-up">Built around people</div>
+              <h2 class="features-headline reveal-up delay-1">
+                Social first.<br />
+                <span class="gradient-text">Money handled carefully.</span>
+              </h2>
+            </div>
+            <div class="features-grid">
+              <article class="feature-card reveal-scale delay-1">
+                <div class="feature-icon" style="--accent: #f0cb1f" aria-hidden="true">▶</div>
+                <h3 class="feature-title">Native media</h3>
+                <p class="feature-desc">Videos play inside the mobile app with familiar controls, while photos and stories appear as actual media—not raw links.</p>
+                <div class="feature-glow" style="--accent: #f0cb1f" aria-hidden="true"></div>
+              </article>
+              <article class="feature-card reveal-scale delay-2">
+                <div class="feature-icon" style="--accent: #4ccd62" aria-hidden="true">◎</div>
+                <h3 class="feature-title">Communities</h3>
+                <p class="feature-desc">Make groups, request access to private spaces, welcome members, and keep conversations moving in real time.</p>
+                <div class="feature-glow" style="--accent: #4ccd62" aria-hidden="true"></div>
+              </article>
+              <article class="feature-card reveal-scale delay-3">
+                <div class="feature-icon" style="--accent: #f0cb1f" aria-hidden="true">€</div>
+                <h3 class="feature-title">A real-money wallet</h3>
+                <p class="feature-desc">Golt is being designed around euro amounts, clear transaction records, refunds, and earnings that can be explained.</p>
+                <div class="feature-glow" style="--accent: #f0cb1f" aria-hidden="true"></div>
+              </article>
+              <article class="feature-card reveal-scale delay-4">
+                <div class="feature-icon" style="--accent: #4ccd62" aria-hidden="true">◇</div>
+                <h3 class="feature-title">Privacy that follows the post</h3>
+                <p class="feature-desc">Public, follower-only, subscriber-only, and author-only posts keep the same rules across feeds, search, comments, and stories.</p>
+                <div class="feature-glow" style="--accent: #4ccd62" aria-hidden="true"></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="early-access" id="early-access">
+          <div class="early-glow early-glow--left" aria-hidden="true"></div>
+          <div class="early-glow early-glow--right" aria-hidden="true"></div>
+          <div class="container early-container">
+            <div class="early-badge reveal-up">
+              <span class="badge-dot badge-dot--green" aria-hidden="true"></span>
+              Pre-launch
+            </div>
+            <h2 class="early-headline reveal-up delay-1">
+              Want to hear when<br />
+              <span class="gradient-text">Golt is ready?</span>
+            </h2>
+            <p class="early-desc reveal-up delay-2">
+              The public signup connection is not live yet. When it is connected, this form will send your email to Golt’s waitlist service—never to a fake placeholder address.
+            </p>
+            <form class="waitlist-form reveal-up delay-3" id="waitlist-form" novalidate>
+              <label for="waitlist-email">Email address</label>
+              <div class="waitlist-row">
+                <input id="waitlist-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+                <button class="btn btn--primary" type="submit" id="waitlist-submit">Join the waitlist</button>
               </div>
-              <button class="wheel-spin-btn" id="spin-btn">
-                <span class="spin-btn-inner">SPIN</span>
-              </button>
-            </div>
-            <div class="wheel-result" id="wheel-result">
-              <div class="result-inner" id="result-inner">
-                <span class="result-label">You landed on</span>
-                <span class="result-value" id="result-value">—</span>
-              </div>
-            </div>
+              <p class="form-status" id="waitlist-status" role="status" aria-live="polite"></p>
+            </form>
+            <p class="launch-note">Planned features and reward programs may change before launch and will depend on eligibility, local rules, and final terms.</p>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
-      <!-- EARLY ACCESS -->
-      <section class="early-access" id="early-access">
-        <div class="early-glow early-glow--left"></div>
-        <div class="early-glow early-glow--right"></div>
-        <div class="container early-container">
-          <div class="early-badge reveal-up">
-            <span class="badge-dot badge-dot--green"></span>
-            Limited early spots
-          </div>
-          <h2 class="early-headline reveal-up delay-1">
-            Get in before<br />
-            <span class="gradient-text">everyone else does.</span>
-          </h2>
-          <p class="early-desc reveal-up delay-2">
-            Early members lock in <strong>3 free spins</strong> from day one. No payment. No waitlist shuffle. Just sign up, show up, and start spinning when we launch.
-          </p>
-          <div class="early-perks reveal-up delay-3">
-            <div class="perk">
-              <div class="perk-check">✓</div>
-              <span>3 free spins on launch day</span>
-            </div>
-            <div class="perk">
-              <div class="perk-check">✓</div>
-              <span>Early creator badge on your profile</span>
-            </div>
-            <div class="perk">
-              <div class="perk-check">✓</div>
-              <span>First access to boost features</span>
-            </div>
-          </div>
-          <a href="#" class="btn btn--primary btn--large reveal-up delay-4" id="early-cta-btn">
-            Join the early crew
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </section>
-
-      <!-- CLOSING -->
-      <section class="closing" id="closing">
-        <div class="closing-bg"></div>
-        <div class="container closing-container">
-          <div class="closing-wheel-hint">
-            <canvas id="closing-wheel" width="120" height="120"></canvas>
-          </div>
-          <h2 class="closing-headline reveal-up">
-            Your move.
-          </h2>
-          <p class="closing-sub reveal-up delay-1">
-            Golt is launching soon. Early crew gets 3 free spins.<br />
-            Get in now before the door closes.
-          </p>
-          <a href="#" class="btn btn--primary btn--large reveal-up delay-2" id="closing-cta-btn">
-            Get early access &rarr;
-          </a>
-          <div class="closing-stats reveal-up delay-3">
-            <div class="stat">
-              <span class="stat-num">3</span>
-              <span class="stat-label">Free spins for early members</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-              <span class="stat-num">$200</span>
-              <span class="stat-label">Top spin prize</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat">
-              <span class="stat-num">0</span>
-              <span class="stat-label">Cost to sign up</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FOOTER -->
       <footer class="footer">
         <div class="container footer-inner">
           <span class="footer-logo">GOLT</span>
-          <span class="footer-copy">© 2025 Golt. All rights reserved.</span>
+          <span class="footer-copy">© <span id="current-year"></span> Golt. Pre-launch website.</span>
         </div>
       </footer>
-
     </div>
     <script type="module" src="/main.js"></script>
   </body>
